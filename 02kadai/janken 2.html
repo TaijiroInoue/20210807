@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sample2.css">
+  <title>幽☆遊☆白書</title>
+</head>
+
+<body class="all">
+  <main>
+    <section class="haikei"></section>
+    <div class="all_action">
+      <div class="action" id="action">
+        <div class="character">
+          <img src="yusuke.png" alt="主人公" class="main_character">
+          <img src="toguro.jpeg" alt="敵" class="sub_character">
+        </div>
+
+        <ul>
+          <li class="janken_gu" id="gu_btn">幽助</li>
+          <li class="janken_choki" id="cho_btn">蔵馬</li>
+          <li class="janken_par" id="par_btn">飛影</li>
+        </ul>
+        <!-- <div id="result2"></div> -->
+        <!-- <a href="javascript.history.back()">戻る</a> -->
+      </div>
+
+      <div class="action2" id="action2">
+        <div class="fight">
+          <img src="reigan.gif" alt="win" class="yusuke_win" id="yusuke_win">
+          <img src="kurama.gif" alt="win" class="kurama_win">
+          <img src="hiei.gif" alt="win" class="hiei_win">
+          <img src="drow.gif" alt="drow" class="drow">
+          <img src="toguro.gif" alt="lose" class="lose">
+          <img src="" alt="">
+        </div>
+        <div class="you_win" id="you_win">YOU WIN</div>
+        <div class="return" id="return">もう一度たたかう</div>
+      </div>
+    </div>
+
+
+
+
+    <!-- <div id="result2"></div> -->
+    <!-- <a href="javascript.history.back()">戻る</a> -->
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+
+    $("#gu_btn").on("click", function () {
+      const r = Math.ceil(Math.random() * 1);
+      if (r == 1) {
+        $("#action").remove();
+        $("#yusuke_win").fadeIn(1000, function () {
+          setTimeout(function () {
+            $("#yusuke_win").remove();
+          }, 2500);
+        })
+
+        setTimeout(function () {
+          $("#you_win").fadeIn();
+        }, 3500);
+
+        // setTimeout(function(){
+        //     $("#you_win").remove();
+        //   },15000);
+
+        setTimeout(function () {
+          $("#return").fadeIn();
+        }, 5000);
+      }
+
+      if (r == 2) {
+        $("#fight").text('DRAW');
+      }
+
+      if (r == 3) {
+        $("#fight").text('LOSE');
+      }
+
+    })
+
+
+
+
+
+    $("#cho_btn").on("click", function () {
+
+      const r = Math.ceil(Math.random() * 3);
+
+      if (r == 1) {
+        $("#result").text('WIN');
+        // $("#result2").text('次に進む');
+      }
+
+      if (r == 2) {
+        $("#result").text('DRAW');
+      }
+
+      if (r == 3) {
+        $("#result").text('LOSE');
+      }
+    })
+
+    $("#par_btn").on("click", function () {
+
+      const r = Math.ceil(Math.random() * 3);
+
+      if (r == 1) {
+        $("#result").text('WIN');
+      }
+
+      if (r == 2) {
+        $("#result").text('DRAW');
+      }
+
+      if (r == 3) {
+        $("#result").text('LOSE');
+      }
+    })
+
+  </script>
+
+</body>
+
+</html>

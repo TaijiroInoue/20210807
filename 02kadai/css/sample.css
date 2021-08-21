@@ -1,0 +1,115 @@
+.all{
+    background-image: url("../haikei.jpeg");
+    background-position: center;
+    background-size: 1800px;
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: auto;
+    padding:0;
+    text-align:center;
+    width: 1800px;
+    font-size: 32px;
+}
+header{
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+main{
+    border-bottom:1px solid #ccc;
+}
+
+.character{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_character{
+    width: 400px;
+    margin-left: 300px;
+}
+
+.sub_character{
+    width: 400px;
+    margin-right: 300px;
+}
+
+footer{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    font-size:60px;
+    font-weight: bold;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: rgba(255, 255, 255, 0.5);
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+
+.janken_gu{
+    background-image: url("../reikoudan.jpeg");
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+
+.janken_gu:hover{
+    background-image: url("../reikoudan.jpeg");
+    background-position: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
+
+.janken_choki{
+    background-image: url("../reigan.png");
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+
+.janken_choki:hover{
+    background-image: url("../reigan.png");
+    background-position: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
+
+.janken_par{
+    background-image: url("../zutuki.jpeg");
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+
+.janken_par:hover{
+    background-image: url("../zutuki.jpeg");
+    background-position: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
+
+.result{
+    padding-bottom: 250px;
+    font-size: 100px;
+}

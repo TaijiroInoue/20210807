@@ -1,0 +1,170 @@
+.all{
+    background-image: url("../haikei.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width:auto;
+    background-size: auto 100%;
+}
+
+/* .conte {
+    height: 100vh;
+    width:auto;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    } */
+
+/* body{
+    margin: auto;
+    padding:0;
+    text-align:center;
+    width: 1800px;
+    font-size: 32px;
+} */
+
+.action{
+    height: 100vh;
+    width:1400px;
+    margin: auto;
+}
+
+.character{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_character{
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.sub_character{
+    width: 400px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+
+
+ul{
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    font-size:60px;
+    font-weight: bold;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: rgba(255, 255, 255, 0.5);
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+
+.janken_gu{
+    background-image: url("../reikoudan.jpeg");
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+
+.janken_gu:hover{
+    background-image: url("../reikoudan.jpeg");
+    background-position: center;
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+
+.janken_choki{
+    background-image: url("../reigan.png");
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+
+.janken_choki:hover{
+    background-image: url("../reigan.png");
+    background-position: center;
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+
+.janken_par{
+    background-image: url("../zutuki.jpeg");
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+}
+
+.janken_par:hover{
+    background-image: url("../zutuki.jpeg");
+    background-position: center;
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+
+.fight{
+    text-align: center;
+}
+
+.yusuke_win{
+    width: 1400px;
+    display: none;
+}
+
+.you_win{
+    text-align: center;
+    font-size: 300px;
+    display: none;
+}
+
+.kurama_win{
+    width: 1800px;
+    display: none; 
+}
+
+.hiei_win{
+    width: 1800px;
+    display: none;
+}
+
+.drow{
+    width: 1800px;
+    display: none;
+}
+
+.lose{
+    width: 1800px;
+    display: none;
+}
+
+.return{
+    text-align: center;
+    font-size: 30px;
+    background-position: center;
+    background-size: 150px;
+    background-color: #fff;
+    width: 300px;
+    margin: auto;
+    margin-top: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: none;
+}
+
+.result{
+    padding-bottom: 250px;
+    font-size: 100px;
+}
